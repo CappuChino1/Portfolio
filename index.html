@@ -1,12 +1,9 @@
-<header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanasit Pokpool - Game Programmer</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <div class="language-toggle">
-  <button onclick="setLanguage('en')">EN</button>
-  <button onclick="setLanguage('jp')">JP</button>
-</div>
-  <h1>Thanasit Pokpool</h1>
-  <p>Software engineer, Game programmer</p>
-</header>
+</head>
 <script>
 function setLanguage(lang) {
   document.querySelectorAll("[data-en]").forEach(element => {
@@ -14,6 +11,21 @@ function setLanguage(lang) {
   });
 }
 </script>
+<body>
+
+<header>
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('jp')">JP</button>
+  </div>
+
+  <h1>Thanasit Pokpool</h1>
+  <p data-en="Software Engineer / Game Programmer"
+     data-jp="ソフトウェアエンジニア / ゲームプログラマー">
+     Software Engineer / Game Programmer
+  </p>
+</header>
+
 <section id="about">
   <h2 data-en="About" data-jp="自己紹介">About</h2>
 
@@ -25,16 +37,26 @@ function setLanguage(lang) {
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+<h2 data-en="Projects" data-jp="プロジェクト">Projects</h2>
   <div class="project">
-    <h3>Key and the mysterious forest</h3>
-  <p><strong>Genre:</strong> 2D side scrolling action</p>
-  <p><strong>Tech:</strong> Unity, C#</p>
+    <h3 data-en="Key and the mysterious forest" data-jp="不思議な森のキー"</h3>
+<p>
+  <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
+  <span data-en="2D Side-Scrolling Action" data-jp="2D横スクロールアクション">
+    2D Side-Scrolling Action
+  </span>
+</p>
+<p>
+  <strong data-en="Tech:" data-jp="使用言語、ソフト：">Genre:</strong>
+  <span data-en="Unity, C#" data-jp="Unity, C#">
+    Unity, C#
+  </span>
+</p>
   <p
   data-en="Implemented player movement system, weapon mechanics, and enemy AI behavior.
   Focused on responsive input handling and animation synchronization
   to achieve smooth and satisfying combat interactions."
-  data-jp="プレイヤー移動システム、武器メカニクス、敵AIの実装を担当しました。入力処理のレスポンス向上とアニメーション同期に注力し、滑らかで快適な戦闘体験を実現しました。 ">
+  data-jp="プレイヤー移動システム、武器システム、敵AIの実装を担当しました。入力処理のレスポンス向上とアニメーション同期に注力し、滑らかで快適な戦闘体験を実現しました。 ">
   Implemented player movement system, weapon mechanics, and enemy AI behavior.
   Focused on responsive input handling and animation synchronization
   to achieve smooth and satisfying combat interactions.
@@ -49,14 +71,28 @@ function setLanguage(lang) {
 </div>
     </div>
   <div class="project">
-  <h3>Lost relics prototype</h3>
-  <p><strong>Genre:</strong> Roguelike deckbuilder</p>
-  <p><strong>Tech:</strong> Unity, C#</p>
-  <p>
+  <h3 data-en="Lost relics prototype" data-jp="ロスト・レリック プロトタイプ"</h3>
+    <p>
+  <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
+  <span data-en="Roguelike deckbuilder" data-jp="ローグライク デッキ構築">
+    Roguelike deckbuilder
+  </span>
+</p>
+<p>
+  <strong data-en="Tech:" data-jp="使用言語、ソフト：">Genre:</strong>
+  <span data-en="Unity, C#" data-jp="Unity, C#">
+    Unity, C#
+  </span>
+</p>
+   <p
+  data-en="Implemented a turn-based combat system and modular card effect framework.
+  Designed a state-driven stance system to create strategic depth
+  and varied gameplay interactions."
+  data-jp="ターン制バトルシステムおよびモジュール化されたカード効果フレームワークを実装しました。ステート駆動型のスタンスシステムを設計し、戦略性と多様なゲームプレイを実現しました。">
   Implemented a turn-based combat system and modular card effect framework.
   Designed a state-driven stance system to create strategic depth
   and varied gameplay interactions.
-  </p>
+  </p>  
     <div class="video-container">
   <iframe
   src="https://www.youtube.com/embed/zc4X-9lK-FM"
