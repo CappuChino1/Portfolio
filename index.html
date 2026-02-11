@@ -1,14 +1,27 @@
 <header>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <div class="language-toggle">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('jp')">JP</button>
+</div>
   <h1>Thanasit Pokpool</h1>
   <p>Software engineer, Game programmer</p>
 </header>
-
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach(element => {
+    element.textContent = element.getAttribute(`data-${lang}`);
+  });
+}
+</script>
 <section id="about">
-  <h2>About</h2>
-  <p>I'm a software engineer passionate about building interactive systems
-and creating engaging gameplay experiences.
-I focus on clean architecture and maintainable gameplay code.</p>
+  <h2 data-en="About" data-jp="自己紹介">About</h2>
+
+  <p 
+    data-en="I'm a software engineer passionate about building interactive systems and creating engaging gameplay experiences. I focus on clean architecture and maintainable gameplay code."
+    data-jp="インタラクティブなシステム構築と魅力的なゲームプレイ体験の開発に情熱を持つソフトウェアエンジニアです。クリーンな設計と保守性の高いゲームプレイコードを重視しています。">
+    I'm a software engineer passionate about building interactive systems and creating engaging gameplay experiences. I focus on clean architecture and maintainable gameplay code.
+  </p>
 </section>
 
 <section id="projects">
@@ -17,7 +30,11 @@ I focus on clean architecture and maintainable gameplay code.</p>
     <h3>Key and the mysterious forest</h3>
   <p><strong>Genre:</strong> 2D side scrolling action</p>
   <p><strong>Tech:</strong> Unity, C#</p>
-  <p>
+  <p
+  data-en="Implemented player movement system, weapon mechanics, and enemy AI behavior.
+  Focused on responsive input handling and animation synchronization
+  to achieve smooth and satisfying combat interactions."
+  data-jp="プレイヤー移動システム、武器メカニクス、敵AIの実装を担当しました。入力処理のレスポンス向上とアニメーション同期に注力し、滑らかで快適な戦闘体験を実現しました。 ">
   Implemented player movement system, weapon mechanics, and enemy AI behavior.
   Focused on responsive input handling and animation synchronization
   to achieve smooth and satisfying combat interactions.
