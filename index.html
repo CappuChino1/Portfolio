@@ -55,8 +55,8 @@ function setLanguage(lang) {
 
 <p>
   <strong data-en="Development Period:" data-jp="開発期間：">Development Period:</strong>
-  <span data-en="6 months" data-jp="約6ヶ月">
-    6 months
+  <span data-en="3 months" data-jp="約3ヶ月">
+    3 months
   </span>
 </p>
 <p>
@@ -74,6 +74,22 @@ function setLanguage(lang) {
   Focused on responsive input handling and animation synchronization
   to achieve smooth and satisfying combat interactions.
   </p>
+    <ul>
+  <li data-en="Designed and implemented player controller architecture"
+      data-jp="プレイヤー操作システムの設計および実装">
+      Designed and implemented player controller architecture
+  </li>
+
+  <li data-en="Developed enemy AI behavior using state machines"
+      data-jp="ステートマシンを用いた敵AIの実装">
+      Developed enemy AI behavior using state machines
+  </li>
+
+  <li data-en="Integrated animation and combat logic"
+      data-jp="アニメーションと戦闘ロジックの統合">
+      Integrated animation and combat logic
+  </li>
+</ul>
     <div class="video-container">
   <iframe
     src="https://www.youtube.com/embed/Xj_nWxR91Xw"
@@ -120,6 +136,22 @@ function setLanguage(lang) {
   Designed a state-driven stance system to create strategic depth
   and varied gameplay interactions.
   </p>  
+    <ul>
+  <li data-en="Implemented the core turn-based battle system including turn order management and action resolution"
+      data-jp="ターン順管理および行動処理を含むターン制バトルの基盤システムを実装">
+      Implemented the core turn-based battle system including turn order management and action resolution
+  </li>
+
+  <li data-en="Developed a modular card effect framework to allow reusable and extensible card behaviors"
+      data-jp="再利用および拡張が可能なモジュール型カード効果フレームワークを開発">
+      Developed a modular card effect framework to allow reusable and extensible card behaviors
+  </li>
+
+  <li data-en="Designed and implemented a state-driven stance system to enhance strategic decision-making"
+      data-jp="戦略性を高めるためのステート駆動型スタンスシステムを設計・実装">
+      Designed and implemented a state-driven stance system to enhance strategic decision-making
+  </li>
+</ul>
     <div class="video-container">
   <iframe
   src="https://www.youtube.com/embed/zc4X-9lK-FM"
@@ -145,6 +177,7 @@ function setLanguage(lang) {
 </section>
   <script>
 function setLanguage(lang) {
+  document.documentElement.lang = lang === "jp" ? "ja" : "en";
   document.querySelectorAll("[data-en]").forEach(element => {
     element.textContent = element.getAttribute(`data-${lang}`);
   });
