@@ -1,232 +1,203 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thanasit Pokpool — Software Engineer and Game Programmer specializing in Unity and C#. Portfolio of game development projects.">
   <title>Thanasit Pokpool - Game Programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="language-toggle">
-    <button onclick="setLanguage('en')">EN</button>
-    <button onclick="setLanguage('jp')">JP</button>
+  <div class="header-top">
+    <div class="language-toggle">
+      <button class="active" onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('jp')">JP</button>
+    </div>
   </div>
-
-  <h1 data-en="Thanasit Pokpool" data-jp="ポクプール タナシット">Thanasit Pokpool</h1>
-  <p data-en="Software Engineer / Game Programmer"
-     data-jp="ソフトウェアエンジニア / ゲームプログラマー">
-     Software Engineer / Game Programmer
-  </p>
+  <div class="header-content">
+    <h1 data-en="Thanasit Pokpool" data-jp="ポクプール タナシット">Thanasit Pokpool</h1>
+    <p class="subtitle" data-en="Software Engineer / Game Programmer" data-jp="ソフトウェアエンジニア / ゲームプログラマー">
+      Software Engineer / Game Programmer
+    </p>
+    <nav>
+      <a href="#about" data-en="About" data-jp="自己紹介">About</a>
+      <a href="#skills" data-en="Skills" data-jp="スキル">Skills</a>
+      <a href="#projects" data-en="Projects" data-jp="プロジェクト">Projects</a>
+      <a href="#contact" data-en="Contact" data-jp="連絡先">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <section id="about">
   <h2 data-en="About" data-jp="自己紹介">About</h2>
-
-  <p 
+  <p
     data-en="I'm a software engineer passionate about building interactive systems and creating engaging gameplay experiences. I focus on clean architecture and maintainable gameplay code."
     data-jp="インタラクティブなシステム構築と魅力的なゲームプレイ体験の開発に情熱を持つソフトウェアエンジニアです。クリーンな設計と保守性の高いゲームプレイコードを重視しています。">
     I'm a software engineer passionate about building interactive systems and creating engaging gameplay experiences. I focus on clean architecture and maintainable gameplay code.
   </p>
 </section>
 
+<section id="skills">
+  <h2 data-en="Skills" data-jp="スキル">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3 data-en="Languages" data-jp="言語">Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">C#</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3 data-en="Engines &amp; Tools" data-jp="エンジン・ツール">Engines &amp; Tools</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Unity</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3 data-en="Concepts" data-jp="技術概念">Concepts</h3>
+      <div class="skill-tags">
+        <span class="skill-tag" data-en="State Machines" data-jp="ステートマシン">State Machines</span>
+        <span class="skill-tag" data-en="OOP Design" data-jp="オブジェクト指向設計">OOP Design</span>
+        <span class="skill-tag" data-en="Game Architecture" data-jp="ゲームアーキテクチャ">Game Architecture</span>
+        <span class="skill-tag" data-en="AI Behavior Systems" data-jp="AI行動システム">AI Behavior Systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="projects">
-<h2 data-en="Projects" data-jp="プロジェクト">Projects</h2>
+  <h2 data-en="Projects" data-jp="プロジェクト">Projects</h2>
+
   <div class="project">
     <h3 data-en="Key and the mysterious forest" data-jp="不思議な森のキー">Key and the mysterious forest</h3>
-<p>
-  <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
-  <span data-en="2D Side-Scrolling Action" data-jp="2D横スクロールアクション">
-    2D Side-Scrolling Action
-  </span>
-</p>
-    <p>
-  <strong data-en="Role:" data-jp="担当：">Role:</strong>
-  <span data-en="Developer" data-jp="プログラマー">
-    Developer
-  </span>
-</p>
-
-<p>
-  <strong data-en="Development Period:" data-jp="開発期間：">Development Period:</strong>
-  <span data-en="3 months" data-jp="約3ヶ月">
-    3 months
-  </span>
-</p>
-    <p data-en="Team Size: 3 members"
-   data-jp="チーム人数：3名">
-   Team Size: 3 members
-</p>
-<p>
-  <strong data-en="Tech:" data-jp="使用技術、ソフト：">Tech:</strong>
-  <span data-en="Unity, C#" data-jp="Unity, C#">
-    Unity, C#
-  </span>
-</p>
-    <ul>
-  <li data-en="Designed and implemented player controller architecture"
-      data-jp="プレイヤー操作システムの設計および実装">
-      Designed and implemented player controller architecture
-  </li>
-
-  <li data-en="Developed enemy AI behavior using state machines"
-      data-jp="ステートマシンを用いた敵AIの実装">
-      Developed enemy AI behavior using state machines
-  </li>
-
-  <li data-en="Integrated animation and combat logic"
-      data-jp="アニメーションと戦闘ロジックの統合">
-      Integrated animation and combat logic
-  </li>
-</ul>
-    <div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/OpgA6hUr1G4"
-    title="Gameplay video"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
+    <div class="project-meta">
+      <span class="meta-item">
+        <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
+        <span data-en="2D Side-Scrolling Action" data-jp="2D横スクロールアクション">2D Side-Scrolling Action</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Role:" data-jp="担当：">Role:</strong>
+        <span data-en="Developer" data-jp="プログラマー">Developer</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Period:" data-jp="開発期間：">Period:</strong>
+        <span data-en="3 months" data-jp="約3ヶ月">3 months</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Team:" data-jp="チーム：">Team:</strong>
+        <span data-en="3 members" data-jp="3名">3 members</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Tech:" data-jp="使用技術：">Tech:</strong>
+        <span data-en="Unity, C#" data-jp="Unity, C#">Unity, C#</span>
+      </span>
     </div>
-  <div class="project">
-  <h3 data-en="Lost relics prototype" data-jp="ロスト・レリック プロトタイプ">Lost relics prototype</h3>
-    <p>
-  <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
-  <span data-en="Roguelike deckbuilder" data-jp="ローグライク デッキ構築">
-    Roguelike deckbuilder
-  </span>
-</p>
-    </p>
-    <p>
-  <strong data-en="Role:" data-jp="担当：">Role:</strong>
-  <span data-en="Developer" data-jp="プログラマー">
-    Developer
-  </span>
-</p>
-
-<p>
-  <strong data-en="Development Period:" data-jp="開発期間：">Development Period:</strong>
-  <span data-en="6 months" data-jp="約6ヶ月">
-    6 months
-  </span>
-</p>
-<p data-en="Team Size: 3 members"
-   data-jp="チーム人数：3名">
-   Team Size: 3 members
-</p>
-<p>
-  <strong data-en="Tech:" data-jp="使用技術、ソフト：">Genre:</strong>
-  <span data-en="Unity, C#" data-jp="Unity, C#">
-    Unity, C#
-  </span>
-</p>
     <ul>
-  <li data-en="Implemented the core turn-based battle system including turn order management and action resolution"
-      data-jp="ターン順管理および行動処理を含むターン制バトルの基盤システムを実装">
-      Implemented the core turn-based battle system including turn order management and action resolution
-  </li>
-
-  <li data-en="Developed a modular card effect framework to allow reusable and extensible card behaviors"
-      data-jp="再利用および拡張が可能なモジュール型カード効果フレームワークを開発">
-      Developed a modular card effect framework to allow reusable and extensible card behaviors
-  </li>
-
-  <li data-en="Designed and implemented a state-driven stance system to enhance strategic decision-making"
-      data-jp="戦略性を高めるためのステート駆動型スタンスシステムを設計・実装">
-      Designed and implemented a state-driven stance system to enhance strategic decision-making
-  </li>
-</ul>
+      <li data-en="Designed and implemented player controller architecture"
+          data-jp="プレイヤー操作システムの設計および実装">
+          Designed and implemented player controller architecture
+      </li>
+      <li data-en="Developed enemy AI behavior using state machines"
+          data-jp="ステートマシンを用いた敵AIの実装">
+          Developed enemy AI behavior using state machines
+      </li>
+      <li data-en="Integrated animation and combat logic"
+          data-jp="アニメーションと戦闘ロジックの統合">
+          Integrated animation and combat logic
+      </li>
+    </ul>
     <div class="video-container">
-  <iframe
-  src="https://www.youtube.com/embed/zc4X-9lK-FM"
-  title="Gameplay video"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-</div>
+      <iframe
+        src="https://www.youtube.com/embed/OpgA6hUr1G4"
+        title="Gameplay video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
+
   <div class="project">
-    <h3 data-en="Ctective 2" data-jp="Ctective 2">Ctective 2</h3>
-<p>
-  <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
-  <span data-en="Puzzle" data-jp="パズルゲーム">
-    Puzzle
-  </span>
-</p>
-    <p>
-  <strong data-en="Role:" data-jp="担当：">Role:</strong>
-  <span data-en="project manager" data-jp="プロジェクトマネージャー">
-    project manager
-  </span>
-</p>
-
-<p>
-  <strong data-en="Development Period:" data-jp="開発期間：">Development Period:</strong>
-  <span data-en="3 months" data-jp="約3ヶ月">
-    3 months
-  </span>
-</p>
-    <p data-en="Team Size: 6 members"
-   data-jp="チーム人数：6名">
-   Team Size: 6 members
-</p>
-<p>
-  <strong data-en="Tech:" data-jp="使用技術、ソフト：">Tech:</strong>
-  <span data-en="Unity, C#" data-jp="Unity, C#">
-    Unity, C#
-  </span>
-</p>
-   <ul>
-  <li data-en="Managed team scheduling and milestone planning to ensure on-time delivery"
-      data-jp="チームのスケジュール管理およびマイルストーン計画を担当し、納期遵守を徹底">
-      Managed team scheduling and milestone planning to ensure on-time delivery
-  </li>
-
-  <li data-en="Tracked development progress and identified risks to maintain project stability"
-      data-jp="開発進捗の可視化およびリスク管理を行い、プロジェクトの安定運営を推進">
-      Tracked development progress and identified risks to maintain project stability
-  </li>
-
-  <li data-en="Facilitated cross-team communication between writing, art, and programming members"
-      data-jp="シナリオ・アート・プログラミング各チーム間の連携および調整を担当">
-      Facilitated cross-team communication between writing, art, and programming members
-  </li>
-
-  <li data-en="Provided technical support and assisted with implementation when necessary"
-      data-jp="必要に応じて技術的サポートおよび実装支援を実施">
-      Provided technical support and assisted with implementation when necessary
-  </li>
-</ul>
-    <div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/scf-2_B8K84"
-    title="Gameplay video"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
+    <h3 data-en="Lost relics prototype" data-jp="ロスト・レリック プロトタイプ">Lost relics prototype</h3>
+    <div class="project-meta">
+      <span class="meta-item">
+        <strong data-en="Genre:" data-jp="ジャンル：">Genre:</strong>
+        <span data-en="Roguelike deckbuilder" data-jp="ローグライク デッキ構築">Roguelike deckbuilder</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Role:" data-jp="担当：">Role:</strong>
+        <span data-en="Developer" data-jp="プログラマー">Developer</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Period:" data-jp="開発期間：">Period:</strong>
+        <span data-en="6 months" data-jp="約6ヶ月">6 months</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Team:" data-jp="チーム：">Team:</strong>
+        <span data-en="3 members" data-jp="3名">3 members</span>
+      </span>
+      <span class="meta-item">
+        <strong data-en="Tech:" data-jp="使用技術：">Tech:</strong>
+        <span data-en="Unity, C#" data-jp="Unity, C#">Unity, C#</span>
+      </span>
     </div>
-  <!-- Project cards go here -->
-</section>
+    <ul>
+      <li data-en="Implemented the core turn-based battle system including turn order management and action resolution"
+          data-jp="ターン順管理および行動処理を含むターン制バトルの基盤システムを実装">
+          Implemented the core turn-based battle system including turn order management and action resolution
+      </li>
+      <li data-en="Developed a modular card effect framework to allow reusable and extensible card behaviors"
+          data-jp="再利用および拡張が可能なモジュール型カード効果フレームワークを開発">
+          Developed a modular card effect framework to allow reusable and extensible card behaviors
+      </li>
+      <li data-en="Designed and implemented a state-driven stance system to enhance strategic decision-making"
+          data-jp="戦略性を高めるためのステート駆動型スタンスシステムを設計・実装">
+          Designed and implemented a state-driven stance system to enhance strategic decision-making
+      </li>
+    </ul>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/zc4X-9lK-FM"
+        title="Gameplay video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 
+</section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <a href="https://github.com/CappuChino1">GitHub</a>
-  <a href="https://www.linkedin.com/in/thanasit-pokpool-719246263/">Linkedin</a>
-  <a href="https://steamcommunity.com/id/OCappuChino/">Steam</a>
-  <p>
-  <span data-en="Email : thanasit.pokpool@gmail.com" data-jp="Email : thanasit.pokpool@gmail.com">
-    Email : thanasit.pokpool@gmail.com
-  </span>
-</p>
+  <h2 data-en="Contact" data-jp="連絡先">Contact</h2>
+  <div class="contact-links">
+    <a href="https://github.com/CappuChino1" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/thanasit-pokpool-719246263/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://steamcommunity.com/id/OCappuChino/" target="_blank" rel="noopener">Steam</a>
+  </div>
+  <p class="contact-email">
+    <span data-en="Email: thanasit.pokpool@gmail.com" data-jp="メール：thanasit.pokpool@gmail.com">
+      Email: thanasit.pokpool@gmail.com
+    </span>
+  </p>
 </section>
-  <script>
+
+<footer>
+  <p data-en="© 2026 Thanasit Pokpool" data-jp="© 2026 ポクプール タナシット">© 2026 Thanasit Pokpool</p>
+</footer>
+
+<script>
 function setLanguage(lang) {
   document.documentElement.lang = lang === "jp" ? "ja" : "en";
-  document.querySelectorAll("[data-en]").forEach(element => {
-    element.textContent = element.getAttribute(`data-${lang}`);
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
   });
+  document.querySelectorAll(".language-toggle button").forEach(btn => btn.classList.remove("active"));
+  document.querySelector(`.language-toggle button[onclick="setLanguage('${lang}')"]`).classList.add("active");
 }
 </script>
-  </body>
+</body>
 </html>
