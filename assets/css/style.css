@@ -204,9 +204,6 @@ h2 {
   border: 1px solid var(--accent-light);
 }
 
-.skill-category--wide {
-  grid-column: 1 / -1;
-}
 
 .skill-tag {
   background: var(--accent-light);
@@ -223,6 +220,17 @@ h2 {
 }
 
 /* === Projects === */
+
+.project-collab {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.project-collab a {
+  color: var(--accent);
+  font-weight: 500;
+}
 
 .project {
   background: var(--card-bg);
@@ -374,9 +382,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .skill-category--wide {
-    grid-column: 1;
-  }
 
   .project-meta {
     flex-direction: column;
