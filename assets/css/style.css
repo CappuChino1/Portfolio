@@ -204,6 +204,21 @@ h2 {
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.wip-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
 }
 
 .project-meta {
@@ -257,7 +272,6 @@ h2 {
 .screenshot-container {
   border-radius: 8px;
   overflow: hidden;
-  background: #000;
   line-height: 0;
 }
 
