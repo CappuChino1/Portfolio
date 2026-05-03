@@ -130,17 +130,17 @@
       </span>
     </div>
     <ul>
-      <li data-en="Designed and implemented player controller architecture"
-          data-jp="プレイヤー操作システムの設計および実装">
-          Designed and implemented player controller architecture
+      <li data-en="Architected the player controller, handling movement, jumping, and state transitions for responsive 2D character control"
+          data-jp="移動・ジャンプ・状態遷移を含むプレイヤーコントローラーを設計・実装し、レスポンシブな2Dキャラクター操作を実現">
+          Architected the player controller, handling movement, jumping, and state transitions for responsive 2D character control
       </li>
-      <li data-en="Developed enemy AI behavior using state machines"
-          data-jp="ステートマシンを用いた敵AIの実装">
-          Developed enemy AI behavior using state machines
+      <li data-en="Programmed enemy AI using a finite state machine, implementing patrol, chase, and attack behavior states"
+          data-jp="有限ステートマシンを用いた敵AIを実装し、巡回・追跡・攻撃の各行動ステートを構築">
+          Programmed enemy AI using a finite state machine, implementing patrol, chase, and attack behavior states
       </li>
-      <li data-en="Integrated animation and combat logic"
-          data-jp="アニメーションと戦闘ロジックの統合">
-          Integrated animation and combat logic
+      <li data-en="Synchronized animation states with combat logic to ensure consistent visual feedback across all player and enemy actions"
+          data-jp="アニメーションステートと戦闘ロジックを連携させ、プレイヤーおよび敵の全行動に対して一貫した視覚フィードバックを実現">
+          Synchronized animation states with combat logic to ensure consistent visual feedback across all player and enemy actions
       </li>
     </ul>
     <div class="video-container">
@@ -178,17 +178,25 @@
       </span>
     </div>
     <ul>
-      <li data-en="Implemented the core turn-based battle system including turn order management and action resolution"
-          data-jp="ターン順管理および行動処理を含むターン制バトルの基盤システムを実装">
-          Implemented the core turn-based battle system including turn order management and action resolution
+      <li data-en="Built a speed-based turn system with per-character action queuing, priority ordering, and full action resolution logic"
+          data-jp="キャラクターごとの行動キューと優先順位管理を備えたスピードベースのターンシステムを構築し、行動解決処理を実装">
+          Built a speed-based turn system with per-character action queuing, priority ordering, and full action resolution logic
       </li>
-      <li data-en="Developed a modular card effect framework to allow reusable and extensible card behaviors"
-          data-jp="再利用および拡張が可能なモジュール型カード効果フレームワークを開発">
-          Developed a modular card effect framework to allow reusable and extensible card behaviors
+      <li data-en="Designed a data-driven card framework with composable effects supporting cost management, stance changes, buffs, and debuffs"
+          data-jp="コスト管理・スタンス変更・バフ・デバフに対応した、コンポーザブルなエフェクトを持つデータ駆動型カードフレームワークを設計">
+          Designed a data-driven card framework with composable effects supporting cost management, stance changes, buffs, and debuffs
       </li>
-      <li data-en="Designed and implemented a state-driven stance system to enhance strategic decision-making"
-          data-jp="戦略性を高めるためのステート駆動型スタンスシステムを設計・実装">
-          Designed and implemented a state-driven stance system to enhance strategic decision-making
+      <li data-en="Implemented a state-driven stance system that modifies available actions and combat modifiers, adding strategic depth to each encounter"
+          data-jp="利用可能な行動と戦闘修飾値を変化させるステート駆動型スタンスシステムを実装し、各戦闘に戦略的な深みを追加">
+          Implemented a state-driven stance system that modifies available actions and combat modifiers, adding strategic depth to each encounter
+      </li>
+      <li data-en="Implemented layered combat formulas covering damage calculation, critical hits, healing, and elemental resistance"
+          data-jp="ダメージ計算・クリティカル・回復・属性耐性を含む多層的な戦闘計算式を実装">
+          Implemented layered combat formulas covering damage calculation, critical hits, healing, and elemental resistance
+      </li>
+      <li data-en="Developed town and meta-progression systems including randomized shops, quest tracking, party recruitment, and branching stage nodes"
+          data-jp="ランダム化されたショップ・クエスト管理・仲間加入・分岐ステージノードを含むタウンおよびメタ進行システムを開発">
+          Developed town and meta-progression systems including randomized shops, quest tracking, party recruitment, and branching stage nodes
       </li>
     </ul>
     <div class="video-container">
@@ -225,17 +233,17 @@
           data-jp="ハードコードされたTween処理をAnimationPlayer構造に移行し、動的スロットサイズ対応のキャラ立ち絵システムをリファクタリング">
           Refactored character portrait system with dynamic slot sizing and AnimationPlayer architecture, replacing hardcoded Tween logic
       </li>
-      <li data-en="Implemented glitch shader effects for character portraits using a custom GLSL shader integrated with Godot's AnimationPlayer"
-          data-jp="カスタムGLSLシェーダーとAnimationPlayerを連携させ、キャラ立ち絵向けグリッチシェーダーエフェクトを実装">
-          Implemented glitch shader effects for character portraits using a custom GLSL shader integrated with Godot's AnimationPlayer
+      <li data-en="Implemented glitch shader effects for character portraits using a custom Godot shader sequenced through AnimationPlayer"
+          data-jp="カスタムGodotシェーダーとAnimationPlayerを連携させ、キャラ立ち絵向けグリッチシェーダーエフェクトを実装">
+          Implemented glitch shader effects for character portraits using a custom Godot shader sequenced through AnimationPlayer
       </li>
-      <li data-en="Added NVL replay skip feature with confirmation popup, typing timer cancellation, and SFX cleanup on skip"
-          data-jp="確認ポップアップ・タイピングタイマー停止・SE停止処理を含むNVLリプレイスキップ機能を実装">
-          Added NVL replay skip feature with confirmation popup, typing timer cancellation, and SFX cleanup on skip
+      <li data-en="Built a scene skip feature for NVL replay mode, handling confirmation dialog, typing animation cancellation, and audio state cleanup"
+          data-jp="確認ダイアログ・タイピングアニメーション停止・オーディオ状態のクリーンアップを含むNVLリプレイモード向けシーンスキップ機能を実装">
+          Built a scene skip feature for NVL replay mode, handling confirmation dialog, typing animation cancellation, and audio state cleanup
       </li>
-      <li data-en="Added branch editor context menu and keyboard shortcuts with cross-platform macOS and Windows compatibility"
-          data-jp="ブランチエディタのコンテキストメニューおよびキーボードショートカットをmacOS・Windows両対応で実装">
-          Added branch editor context menu and keyboard shortcuts with cross-platform macOS and Windows compatibility
+      <li data-en="Extended the script branch editor with a right-click context menu and keyboard shortcuts, unifying input handling across macOS and Windows"
+          data-jp="スクリプトブランチエディタに右クリックコンテキストメニューとキーボードショートカットを追加し、macOS・Windows間で入力処理を統一">
+          Extended the script branch editor with a right-click context menu and keyboard shortcuts, unifying input handling across macOS and Windows
       </li>
     </ul>
     <div class="screenshot-container">
